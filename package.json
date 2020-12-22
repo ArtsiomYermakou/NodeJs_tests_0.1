@@ -1,0 +1,21 @@
+{
+  "name": "education_node",
+  "version": "1.0.0",
+  "description": "node js learning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "js"
+  ],
+  "author": "Yermakou Artsiom <artem_ermakov_1999@mail.ru>",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "util": "^0.12.3"
+  }
+}
