@@ -1,16 +1,56 @@
 const http = require("http");
+const fs = require("fs");
+const path = require("path");
 
 const server = http.createServer((req, res) => {
-    console.log(req.url)
+    if (req.method === "GET") {
+        res.writeHead(200, {
+            "Content-Type": "text/html; charset=utf-8"
+        })
 
-    res.write(`<h1>Hello from Node.js 1</h1>`);
-    res.write(`<h2>Hello from Node.js 2</h2>`);
-    res.write(`<h3>Hello from Node.js 3</h3>`);
-    res.end(`
-<div style="width: 200px; font-size: 20px">
-<h1 style="color: red">Test</h1>
-</div>
-`);
+        if (req.url === "/") {
+            fs.readFile(path.join(__dirname, "views", "index.html"),
+                "utf-8",
+                (error, content) => {
+                    if (error) {
+                        throw error
+                    }
+                    res.end(content);
+                }
+            )
+        } else if (req.url === "/about") {
+            fs.readFile(path.join(__dirname, "views", "about.html"),
+                "utf-8",
+                (error, content) => {
+                    if (error) {
+                        throw error;
+                    }
+                    res.end(content);
+                }
+            )
+        }
+    } else if (req.method === "POST") {
+
+        const body = [];
+        res.writeHead(200, {
+            "Content-Type": "text/html; charset=utf-8"
+        })
+
+        req.on("data", data => {
+            body.push(Buffer.from(data))
+        })
+
+        req.on("end", () => {
+
+            const message = body.toString().split("=")[1];
+
+            res.end(`
+            <h1>Your message: ${message}</h1>
+        `)
+        })
+
+
+    }
 })
 
 server.listen(3000, () => {
