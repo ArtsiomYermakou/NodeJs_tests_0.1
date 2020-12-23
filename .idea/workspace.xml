@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50211de5-378c-4eeb-b47d-a90956c2d4a7" name="Default Changelist" comment="init">
-      <change afterPath="$PROJECT_DIR$/refs/fs_ref.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/refs/path_ref.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/refs/events_ref.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/refs/os_ref.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/refs/fs_ref.js" beforeDir="false" afterPath="$PROJECT_DIR$/refs/fs_ref.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/refs/notes/newFile.js" beforeDir="false" afterPath="$PROJECT_DIR$/refs/notes/newFile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/refs/notes/newFileNotes.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +42,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608640407913</updated>
-      <workItem from="1608640409020" duration="4619000" />
+      <workItem from="1608640409020" duration="4682000" />
+      <workItem from="1608703637103" duration="1510000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1608641910556</created>
@@ -50,11 +52,29 @@
       <option name="project" value="LOCAL" />
       <updated>1608641910557</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="init">
+      <created>1608648398474</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608648398474</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
